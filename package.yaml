@@ -1,0 +1,28 @@
+name: hakyll-sass
+version: 0.2.4
+synopsis: Hakyll SASS compiler over hsass
+license: MIT
+license-file: LICENSE
+homepage: https://github.com/meoblast001/hakyll-sass
+author: Braden Walters
+maintainer: vc@braden-walters.info
+category: Web
+build-type: Simple
+
+description:
+  Hakyll compiler which indirectly uses libsass to compile SASS and SCSS to CSS.
+  The Ruby SASS compiler is not required. For documentation, see the
+  <https://github.com/meoblast001/hakyll-sass/blob/master/README.md README>.
+
+library:
+  exposed-modules: Hakyll.Web.Sass
+  dependencies:
+    - base
+    - aeson-pretty
+    - hakyll
+    - data-default-class
+    - hsass
+    - filepath
+  source-dirs: src
+  language: Haskell2010
+  ghc-options: -Wall

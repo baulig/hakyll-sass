@@ -1,0 +1,30 @@
+resolver: lts-20.16
+
+extra-deps:
+  - git: https://github.com/baulig/hlibsass.git
+    commit: 02a05aab48b727bbc0ccbeae1de6b643506c3085
+
+  - git: https://github.com/baulig/hakyll.git
+    commit: 61478bd75433cf271e3b4810f6dbccf268c9ca97
+
+  - git: https://github.com/baulig/pandoc.git
+    commit: b33cca59a630b85895819f6816b3a0827da06f39
+
+  - git: https://github.com/baulig/hslua.git
+    commit: 65e37da6081773bdb324dafc1a2285cf1b497382
+    subdirs:
+      - hslua
+      - hslua-aeson
+      - hslua-classes
+      - hslua-core
+      - hslua-marshalling
+      - hslua-module-path
+      - hslua-module-system
+      - hslua-module-text
+      - hslua-module-version
+      - hslua-objectorientation
+      - hslua-packaging
+      - lua
+      - lua-arbitrary
+      - tasty-hslua
+      - tasty-lua
